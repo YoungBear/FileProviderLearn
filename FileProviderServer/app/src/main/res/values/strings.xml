@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FileProviderServer</string>
+    <string name="btn_share">Share</string>
+</resources>
