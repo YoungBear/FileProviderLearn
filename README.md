@@ -233,6 +233,8 @@ AndroidManifest.xml
     }
 ```
 
+## [实例代码](https://github.com/YoungBear/FileProviderLearn)
+
 [FileProvider官方API](https://developer.android.google.cn/reference/android/support/v4/content/FileProvider.html)
 
 [Android 7.0 Changes](https://developer.android.google.cn/about/versions/nougat/android-7.0-changes.html)
