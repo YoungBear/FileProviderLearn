@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">FileProviderServer</string>
     <string name="btn_share">Share</string>
+    <string name="photo_name">Take Photo</string>
+
+    <string name="camera_permission_tips">需要使用照相机权限</string>
 </resources>

@@ -3,19 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ysx.fileproviderserver.MainActivity">
+    tools:context="com.ysx.fileproviderserver.PhotoActivity">
 
     <Button
-        android:id="@+id/btn_share"
+        android:id="@+id/btn_take_photo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_share" />
-
-    <Button
-        android:id="@+id/btn_photo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btn_share"
+        android:layout_alignParentTop="true"
         android:text="@string/photo_name" />
+
+    <ImageView
+        android:id="@+id/iv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_take_photo" />
 
 </RelativeLayout>

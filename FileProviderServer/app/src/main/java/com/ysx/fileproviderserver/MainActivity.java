@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 
 import java.io.File;
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.btn_share)
     Button mBtnShare;
+    @BindView(R.id.btn_photo)
+    Button mBtnPhoto;
 
     private Context mContext;
 
@@ -103,8 +106,17 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    @OnClick(R.id.btn_share)
-    public void onViewClicked() {
-        shareFile();
+    @OnClick({R.id.btn_share, R.id.btn_photo})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
+            case R.id.btn_share:
+                shareFile();
+                break;
+            case R.id.btn_photo:
+                startActivity(new Intent(this, PhotoActivity.class));
+                break;
+            default:
+                break;
+        }
     }
 }
